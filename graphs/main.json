@@ -1,0 +1,62 @@
+{
+    "properties": {
+        "name": "main",
+        "environment": {
+            "type": "noflo-nodejs"
+        },
+        "description": "main-graph",
+        "icon": ""
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "filesystem/ReadDir_5wn3v": {
+            "component": "filesystem/ReadDir",
+            "metadata": {
+                "label": "ReadDir",
+                "x": 432,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "filesystem/WriteFile_s2dog": {
+            "component": "filesystem/WriteFile",
+            "metadata": {
+                "label": "WriteFile",
+                "x": 612,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "filesystem/ReadDir_5wn3v",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "filesystem/WriteFile_s2dog",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "/tmp/my-test",
+            "tgt": {
+                "process": "filesystem/ReadDir_5wn3v",
+                "port": "source"
+            }
+        },
+        {
+            "data": "/tmp/my-test/test.json",
+            "tgt": {
+                "process": "filesystem/WriteFile_s2dog",
+                "port": "filename"
+            }
+        }
+    ]
+}
