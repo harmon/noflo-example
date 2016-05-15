@@ -1,0 +1,17 @@
+{
+  "name": "noflo-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "noflo": "^0.7.5",
+    "noflo-core": "^0.1.14",
+    "noflo-filesystem": "^1.0.6",
+    "noflo-nodejs": "^0.7.1"
+  }
+}

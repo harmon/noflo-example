@@ -1,0 +1,18 @@
+{
+  "id": "d1464ecb-8ac5-4e7d-ac1c-1a3572cc9ed4",
+  "user": "d48d1f48-7afa-4841-9f1c-581f424ebdbd",
+  "host": "localhost",
+  "port": 3005,
+  "label": "Local NoFlo Test",
+  "secret": "s-ewX$0!",
+  "permissions": {
+    "s-ewX$0!": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
